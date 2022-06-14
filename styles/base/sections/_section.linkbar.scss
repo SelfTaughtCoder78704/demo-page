@@ -1,0 +1,25 @@
+.linkbar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  padding: s(1.5);
+  font-size: s(1.5);
+  color: $white;
+  background: $primary;
+
+  @include breakpoint(sm) {
+    padding: s(2);
+  }
+
+  a {
+    display: block;
+    color: inherit;
+    background: inherit;
+    height: 100%;
+    width: 100%;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+  }
+}

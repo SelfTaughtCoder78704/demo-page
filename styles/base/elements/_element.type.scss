@@ -1,0 +1,99 @@
+body {
+  color: $black;
+  font-size: s(2);
+  line-height: 1.5;
+  font-family: $font-text;
+  text-align: center;
+  // Enable antialiasing
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  transition: color 300ms;
+  &:hover {
+    color: $secondary;
+  }
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+p.lead {
+  font-size: s(2.5);
+}
+
+small,
+.small {
+  display: block;
+  font-size: s(1.5);
+  font-family: $font-fine;
+}
+
+sup {
+  font-size: 75%;
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-display;
+}
+
+h1 {
+  font-size: s(5);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: s(4);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: s(3);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: s(2.5);
+  font-weight: 500;
+}
+
+h5 {
+  font-size: s(2);
+  font-weight: 500;
+}
+
+h6 {
+  font-size: s(1.5);
+  letter-spacing: 0.01rem;
+  text-transform: uppercase;
+}
+
+@include breakpoint(sm) {
+  h1 {
+    font-size: s(6);
+  }
+  h2 {
+    font-size: s(5);
+  }
+  h3 {
+    font-size: s(4);
+  }
+}

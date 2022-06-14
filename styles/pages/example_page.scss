@@ -1,0 +1,313 @@
+@import '../base/base';
+@import '../base/sections/section.linkbar';
+@import '../base/sections/section.callout';
+// @import '../base/sections/section.press';
+@import '../base/sections/section.footer';
+
+
+.cta-block {
+  .cta-wrapper {
+    .btn {
+      background-color: #6d28d9;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+  .linkbar {
+    width: 100%;
+    background-color: #e61414; /*-- change to var --*/
+    a {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.33;
+      letter-spacing: -0.01em;
+      color: #FFFCF8; /*-- change to var --*/
+    }
+  }
+
+  .site-header {
+    border-bottom: 2px solid #e61414; /*-- change to var --*/
+    background: transparent;
+    
+    padding: 8px 0;
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 12px;
+      max-width: 1440px;
+    }
+    img {
+      width: 120px;
+    }
+    .cta-block {
+      margin: 0;
+    }
+  }
+
+  .first-callout {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: url('/images/just-bg.png') no-repeat center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 24px 16px;
+      @include bp(sm){
+        flex-direction: row-reverse;
+        max-width: initial;
+        align-items: center;
+        
+      }
+      @include bp(lg){
+        padding: 0;
+      }
+   
+    }
+
+    .callout-content {
+      margin-top: 0;
+      padding: 0 16px 24px;
+      @include bp(sm){
+        width: 50%;
+      }
+      @include bp(lg){
+        padding-left: 64px;
+        padding-right: 64px;
+      }
+    }
+    .title-block {
+      text-align: left;
+      color:#6d28d9;
+      @include bp(lg){
+        align-items: flex-start;
+      }
+      h2 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.25;
+        letter-spacing: -0.03em;
+       
+        margin-bottom: 12px;
+        @include bp(sm){
+          font-size: 40px;
+          line-height:1.2;
+        }
+        @include bp(lg){
+          font-size: 64px;
+          line-height: 1.25;
+        }
+      }
+
+      .lead {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+    
+        margin-bottom: 0;
+        @include bp(sm){
+          font-size: 18px;
+          line-height:1.33;
+        }
+        @include bp(lg){
+          font-size: 24px;
+        }
+      }
+    }
+
+    .cta-block {
+      margin: 32px 0;
+      text-align: left;
+      .cta-wrapper {
+        display: block;
+      }
+    }
+
+    .media-block {
+      margin-top: 0;
+      padding: 0;
+      @include bp(sm){
+        width: 50%;
+      }
+      img {
+        width: 100%;
+        box-shadow: -20px 20px 5px rgb(0 0 0 / 29%);
+      }
+    }
+    
+
+  }
+
+  .press-section {
+    background: url('/images/just-bg.png') no-repeat center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: #e61414;
+    width: 100%;
+    .press-icons {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 18px;
+      @include bp(sm){
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+      }
+  
+    }
+    .press-icon {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+
+      img {
+        max-width: 150px;
+        margin: 0 auto;
+        @include bp(sm){
+          max-width: 220px;
+        }
+      }
+    }
+
+  }
+
+    .quote-block {
+      padding: 40px 0 ;
+      background: linear-gradient(to bottom, #e61414, #6d28d9);
+      background-attachment: fixed;
+      color: white;
+      box-shadow: -20px 20px 5px rgb(0 0 0 / 48%);
+      .quote-body {
+        font-size: 24px;
+        font-style: italic;
+        @include bp(lg){
+          font-size: 45px;
+        }
+      }
+
+      .quote-attribution {
+        font-weight: bold;
+      }
+    }
+
+
+  .bg-wrapper {
+    background: url('/images/just-bg.png') no-repeat center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }    
+    .second-callout {
+      padding: 0 0 40px;
+    
+      &.third {
+          .container {
+            @include bp(sm){
+              flex-direction: row-reverse;
+            }
+          }
+      }
+      
+
+        .container {
+          display: flex;
+          flex-direction: column-reverse;
+          @include bp(sm){
+            display: flex;
+          flex-direction: row;
+          align-items: center;
+          max-width: initial;
+          gap: 64px;
+          }
+
+        }
+    
+        .title-block {
+          text-align: center;
+          @include bp(sm){
+            text-align: left;
+          }
+          h1 {
+            font-size: 1.3rem;
+            @include bp(sm){
+              font-size: 2rem;
+            }
+            @include bp(lg){
+              font-size: 2.5rem;
+            }
+          }
+        }
+
+      .media-block, .callout-content {
+        @include bp(sm){
+          width: 50%;
+        }
+      }
+      .cta-block {
+        margin: 32px 0;
+        text-align: left;
+        .cta-wrapper {
+          display: block;
+        }
+      }
+
+      .media-block {
+        img {
+          max-width: 350px;
+          @include bp(sm){
+            max-width: initial;
+          }
+        }
+      }
+    }
+  
+    .image-text-pair {
+      background: url('/images/just-bg.png') no-repeat center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+      .image-text-top-title {
+        padding-bottom: 24px;
+        @include bp(sm){
+         display: none;
+        }
+      }
+
+      .container {
+        @include bp(sm){
+          display: flex;
+          flex-direction: row;
+          max-width: initial;
+          align-items: center;
+          gap: 64px;
+        }
+      }
+
+      .media-block, .text-wrapper {
+        @include bp(sm){
+          width: 50%;
+        }
+      }
+
+      .title-block {
+        padding-bottom: 24px;
+        display: none;
+        @include bp(sm){
+          display: block;
+          text-align: left;
+        }
+      }
+    }
+
+  .site-footer {
+    background-color: #e61414; /*-- change to var --*/
+  }
+

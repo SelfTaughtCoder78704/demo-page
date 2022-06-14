@@ -1,0 +1,14 @@
+.page-section {
+  padding-top: s(5);
+  padding-bottom: s(5);
+
+  @include breakpoint(sm) {
+    padding-top: s(8);
+    padding-bottom: s(8);
+  }
+
+  @include breakpoint(md) {
+    padding-top: s(10);
+    padding-bottom: s(10);
+  }
+}

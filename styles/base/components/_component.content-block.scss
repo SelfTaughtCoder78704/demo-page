@@ -1,0 +1,12 @@
+.content-block {
+  @include element-spacing;
+
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $screen-sm-min;
+
+  .cta-block {
+    text-align: center;
+  }
+}

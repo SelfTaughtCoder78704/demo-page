@@ -1,0 +1,23 @@
+.review {
+  @extend %cardable;
+  @include block-spacing;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &:focus {
+    outline: none;
+  }
+
+  .quote-block {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .quote-body {
+    flex: 2;
+  }
+}

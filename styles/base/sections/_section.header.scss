@@ -1,0 +1,50 @@
+.site-header {
+  padding-top: s(1);
+  padding-bottom: s(1);
+  background: $white;
+
+  .container {
+    max-width: $screen-xl-min;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > * {
+      margin: 0;
+      flex: 1;
+      display: flex;
+    }
+
+    > *:not(:only-child) {
+      &.header-logo-link {
+        margin-right: auto;
+      }
+      &.cta-block {
+        margin-left: auto;
+        justify-content: flex-end;
+      }
+      &.header-text:last-child {
+        justify-content: flex-end;
+        text-align: right;
+      }
+      &.header-text:first-child {
+        text-align: left;
+      }
+    }
+
+    & > *:only-child,
+    .header-text:not(:first-child):not(:last-child) {
+      justify-content: center;
+    }
+  }
+  @include breakpoint(sm) {
+    padding-top: s(2);
+    padding-bottom: s(2);
+  }
+
+  .header-logo {
+    margin: 0;
+    max-height: s(5);
+    max-width: s(20);
+  }
+}

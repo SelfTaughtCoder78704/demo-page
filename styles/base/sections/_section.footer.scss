@@ -1,0 +1,94 @@
+.site-footer {
+  background: $gray-dark;
+  color: $light;
+  padding: 0;
+
+  .container {
+    padding: 0;
+    max-width: unset;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.footer-brand {
+  width: 100%;
+  padding-top: s(5);
+  padding-bottom: s(5);
+  box-sizing: border-box;
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.15);
+  @include breakpoint(sm) {
+    padding-top: s(6);
+    padding-bottom: s(6);
+  }
+  @include breakpoint(md) {
+    padding-top: s(8);
+    padding-bottom: s(8);
+  }
+}
+
+.footer-sitelink {
+  display: block;
+  margin-top: s(2);
+}
+
+.footer-logo {
+  height: s(5);
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-meta {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin: 0;
+  padding: s(2) s(4);
+  font-size: s(1.5);
+  @include breakpoint(sm) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-copyright {
+  vertical-align: middle;
+}
+
+.footer-links {
+  list-style: none;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li + li {
+    padding-left: s(3);
+  }
+
+  a {
+    display: block;
+  }
+
+  @include breakpoint(sm) {
+    ul {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.footer-copyright + .footer-links {
+  @include breakpoint(small-only) {
+    margin-bottom: s(2);
+  }
+}

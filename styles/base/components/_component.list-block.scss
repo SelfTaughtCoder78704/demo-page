@@ -1,0 +1,27 @@
+.list-block {
+  ul {
+    display: inline-block;
+    text-align: left;
+
+    @include element-spacing;
+  }
+
+  .icon-list-item {
+    display: flex;
+  }
+
+  .list-icon {
+    width: s(3);
+    height: s(3);
+    margin-right: s(1);
+    display: inline-flex;
+    flex: 0 0 s(3);
+    align-items: center;
+  }
+
+  img,
+  svg {
+    max-height: s(3);
+    object-fit: contain;
+  }
+}

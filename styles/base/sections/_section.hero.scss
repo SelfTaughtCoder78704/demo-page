@@ -1,0 +1,60 @@
+.hero-section {
+  min-height: 50vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+
+  .icon-scroll {
+    position: absolute;
+    bottom: s(2);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
+
+  small {
+    font-size: s(2);
+  }
+}
+
+.hero-content {
+  @include element-spacing;
+  @include breakpoint(sm) {
+    .cta-block {
+      margin-top: s(4);
+    }
+  }
+}
+
+.hero-title {
+  font-size: s(5);
+  @include breakpoint(sm) {
+    font-size: s(6);
+  }
+  @include breakpoint(md) {
+    font-size: s(8);
+  }
+}
+
+.hero-overlay {
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.24);
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+}

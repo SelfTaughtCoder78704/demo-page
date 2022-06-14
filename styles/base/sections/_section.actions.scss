@@ -1,0 +1,11 @@
+.action {
+  @extend %cardable;
+  @include element-spacing;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.action-text {
+  flex: 2;
+}

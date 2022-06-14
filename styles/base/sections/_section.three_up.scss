@@ -1,0 +1,53 @@
+.three-up-section {
+  .slick-track {
+    img {
+      margin-right: s(1.5);
+      margin-left: s(1.5);
+      @include breakpoint(sm) {
+        margin-right: s(2);
+        margin-left: s(2);
+      }
+    }
+  }
+
+  .slick-prev {
+    left: s(-2);
+    @include breakpoint(lg) {
+      left: s(-3);
+    }
+    &,
+    &:hover,
+    &:focus {
+      mask-image: asset-url('icons/previous.svg');
+    }
+  }
+
+  .slick-next {
+    right: s(-2);
+    @include breakpoint(lg) {
+      right: s(-3);
+    }
+    &,
+    &:hover,
+    &:focus {
+      mask-image: asset-url('icons/next.svg');
+    }
+  }
+
+  .slick-arrow {
+    z-index: 99;
+    width: s(2.5);
+    height: s(3);
+    &,
+    &:hover,
+    &:focus {
+      background-color: $gray-medium;
+      mask-position: center;
+      mask-size: contain;
+      mask-repeat: no-repeat;
+    }
+    &:before {
+      content: '';
+    }
+  }
+}

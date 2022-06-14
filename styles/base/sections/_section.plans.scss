@@ -1,0 +1,42 @@
+.plan {
+  @extend %cardable;
+  @include element-spacing;
+  display: flex;
+  flex-direction: column;
+
+  &:focus {
+    outline: none;
+  }
+
+  .list-block {
+    flex: 2;
+  }
+}
+
+.plan-title {
+  font-size: s(2.5);
+  @include breakpoint(sm) {
+    font-size: s(4);
+  }
+}
+
+.plan-price {
+  font-weight: 600;
+  font-size: s(4);
+  @include breakpoint(sm) {
+    font-size: s(5);
+  }
+}
+
+.strikethrough-price {
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.strikethrough-price + .price-tag {
+  margin-left: s(1.5);
+}
+
+.plan-legal {
+  font-family: $font-fine;
+}

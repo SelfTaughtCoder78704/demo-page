@@ -1,0 +1,21 @@
+@mixin element-spacing {
+  > * + * {
+    margin-top: s(2);
+  }
+}
+
+@mixin block-spacing {
+  > * + * {
+    margin-top: s(4);
+  }
+  @include breakpoint(sm) {
+    > * + * {
+      margin-top: s(6);
+    }
+  }
+  @include breakpoint(md) {
+    > * + * {
+      margin-top: s(8);
+    }
+  }
+}

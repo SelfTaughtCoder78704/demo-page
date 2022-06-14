@@ -1,0 +1,167 @@
+.longform-section {
+  padding-top: 0;
+
+  .container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: none;
+  }
+}
+
+.longform-hero {
+  img,
+  video {
+    max-height: 60vh;
+    object-fit: cover;
+  }
+
+  .title-block,
+  .media-block {
+    margin-top: s(4);
+  }
+
+  .title-block {
+    padding-right: s(2);
+    padding-left: s(2);
+    text-align: center;
+  }
+
+  @include breakpoint(sm) {
+    .title-block,
+    .media-block {
+      margin-top: s(6);
+    }
+
+    small {
+      font-size: s(2);
+    }
+  }
+  @include breakpoint(lg) {
+    .title-block {
+      padding: 0;
+    }
+  }
+}
+
+.longform-body {
+  max-width: $screen-md-min;
+  margin: 0 auto;
+  text-align: left;
+
+  > * {
+    margin-top: s(4);
+  }
+
+  .longform-title,
+  .longform-paragraph,
+  .longform-block:not(.media-block) {
+    padding-right: s(2);
+    padding-left: s(2);
+  }
+
+  .longform-title,
+  .quote-block {
+    font-weight: 700;
+  }
+
+  .quote-block {
+    text-align: center;
+    font-size: s(2.5);
+  }
+
+  small {
+    font-size: s(2);
+    color: $gray-medium;
+  }
+
+  @include breakpoint(sm) {
+    margin-top: s(5);
+    margin-bottom: s(5);
+
+    > * {
+      margin-top: s(5);
+    }
+
+    .image-text-pair {
+      padding-right: s(2);
+      padding-left: s(2);
+    }
+
+    .quote-block {
+      padding: s(5);
+    }
+  }
+
+  @include breakpoint(lg) {
+    .longform-title,
+    .longform-paragraph,
+    .image-text-pair,
+    .longform-block:not(.quote-block) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.image-text-pair {
+  h2 {
+    font-size: s(2.5);
+  }
+  p.lead {
+    font-size: s(2);
+  }
+
+  .text-wrapper,
+  .media-block {
+    flex: 1;
+  }
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    @include element-spacing;
+
+    @include breakpoint(small-only) {
+      margin-top: s(4);
+      padding-left: s(2);
+      padding-right: s(2);
+    }
+  }
+
+  @include breakpoint(sm) {
+    display: flex;
+    align-items: center;
+    margin-top: s(8);
+    h2 {
+      font-size: s(3);
+    }
+    .text-wrapper {
+      margin-left: s(5);
+    }
+    .media-block {
+      margin-right: s(5);
+    }
+  }
+}
+
+// Modifiers
+.longform-alternate {
+  .longform-hero {
+    display: flex;
+    flex-direction: column;
+
+    .title-block {
+      width: 100%;
+      max-width: $screen-md-min;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    .media-block {
+      margin-top: 0;
+      order: -1;
+    }
+  }
+}

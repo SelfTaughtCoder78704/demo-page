@@ -1,0 +1,11 @@
+{
+  "/": {
+    "page": "/example_page"
+  },
+  "/example": {
+    "page": "/example_page"
+  },
+  "/test-page": {
+    "page": "/test_page"
+  }
+}

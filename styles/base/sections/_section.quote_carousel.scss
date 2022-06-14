@@ -1,0 +1,72 @@
+.quote-carousel-section {
+  padding-top: 0;
+  padding-bottom: s(2.5);
+  @include breakpoint(md) {
+    padding: 0;
+  }
+
+  .slick-initialized .slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    &:focus {
+      outline: none;
+    }
+    > * {
+      flex: 1;
+    }
+    @include breakpoint(md) {
+      flex-direction: row;
+    }
+  }
+
+  .quote-block {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: s(4);
+    padding-bottom: s(4);
+    > * {
+      padding-right: s(4);
+      padding-left: s(4);
+    }
+
+    @include breakpoint(md) {
+      order: 0;
+      padding-top: 0;
+      text-align: left;
+      flex-basis: 50%;
+    }
+  }
+
+  .media-block {
+    img,
+    video {
+      height: s(40);
+      object-fit: cover;
+      object-position: center;
+      @include breakpoint(md) {
+        height: s(75);
+      }
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 0;
+    li button {
+      outline: none;
+      &:before {
+        color: $black;
+      }
+    }
+
+    @include breakpoint(md) {
+      left: s(2.5);
+      bottom: s(2.5);
+      width: unset;
+    }
+  }
+}

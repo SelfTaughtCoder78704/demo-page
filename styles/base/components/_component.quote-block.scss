@@ -1,0 +1,15 @@
+.quote-block {
+  @include element-spacing;
+
+  .quote-attribution {
+    font-size: s(2);
+  }
+
+  .attribution-icon {
+    display: inline-block;
+    width: s(3);
+    height: s(3);
+    margin-right: s(0.5);
+    vertical-align: bottom;
+  }
+}

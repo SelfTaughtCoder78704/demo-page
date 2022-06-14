@@ -1,0 +1,21 @@
+@mixin create-color-helper($name, $value) {
+  .text-#{$name} {
+    color: $value !important;
+  }
+
+  .bg-#{$name} {
+    background-color: $value !important;
+  }
+}
+
+@if $grayscale-helpers-enabled {
+  @each $name, $value in $grayscale {
+    @include create-color-helper($name, $value);
+  }
+}
+
+@if $brandscale-helpers-enabled {
+  @each $name, $value in $brandscale {
+    @include create-color-helper($name, $value);
+  }
+}

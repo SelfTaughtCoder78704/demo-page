@@ -1,0 +1,107 @@
+{
+  "page_title": "Thesis TPL",
+
+  "linkbar": {
+    "text": "Join Thesis As A Developer Today!"
+  },
+  "header": {
+    "logoPath": "/images/logo.svg",
+    "logoLink": "/",
+    "ctaBlock": {
+      "ctaText": "Join Us",
+      "ctaLink": "https://thesistesting.com",
+      "trackable": "call_header"
+    }
+  },
+  "callout": {
+    "classes": "first-callout",
+    "htmlPresent": true,
+    "titleBlock": {
+      "kicker": "Thesis 2022",
+      "title": "TPL-React",
+      "text": "A Work In Progress That Will Be Awesome Later, <br>But Is A Pain In The Ass Now"
+    },
+    "ctaBlock": {
+      "ctaText": "See Library",
+      "ctaLink": "https://github.com/SelfTaughtCoder78704/tplReactPackage",
+      "trackable": "callout_cta"
+    },
+    "mediaBlock": {
+      "image": "/images/code.png",
+      "mediaCaption": "code preview"
+    }
+  },
+  "press": {
+    "brands": [
+      {
+        "logo": "/images/react.png"
+      },
+      {
+        "logo": "/images/next.png"
+      },
+      {
+        "logo": "/images/logo.svg"
+      }
+    ],
+    "topExtras": ["<h2>React + Next + Thesis = <span class='heart'>&#10084;</span></h2> "]
+  },
+  "quoteBlock": {
+    "text": "❝It's better than Rails❞",
+    "attribution": "— Thesis Devs"
+  },
+  "callout2": {
+    "htmlPresent": true,
+    "classes": "second-callout",
+    "titleBlock": {
+      "title": "<span>1. Why We <span style='color:#e61414' class='heart'>&#10084;</span > React</span>",
+      "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+
+    "mediaBlock": {
+      "image": "http://blog.atiom.cn/user/pages/07.BLOG/4-ways-to-increase-user-engagement-and-retention/Easy%20to%20use.png",
+      "mediaCaption": "Easy to use"
+    }
+  },
+  "callout3": {
+    "htmlPresent": true,
+    "classes": "second-callout third",
+    "titleBlock": {
+      "title": "<span>2. Why We <span style='color:#6d28d9;' class='heart'>&#10084;</span > Thesis</span>",
+      "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+
+    "mediaBlock": {
+      "image": "https://i.pinimg.com/originals/aa/aa/9a/aaaa9a416ee78328bf11189ebcfe5f4e.gif",
+      "mediaCaption": "They're gggrrreat!"
+    },
+
+    "ctaBlock": {
+      "ctaText": "Check Us Out",
+      "ctaLink": "#"
+    }
+  },
+  "imageTextPair": {
+    "htmlPresent": true,
+    "classes": "my-pair",
+    "mediaBlock": {
+      "image": "https://i.etsystatic.com/32696216/r/il/d18c2b/3445924288/il_794xN.3445924288_ciki.jpg",
+      "mediaCaption": "code preview"
+    },
+    "titleBlock": {
+      "title": "Thesis <span style='color: red'>TPL</span>",
+      "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+  },
+  "footer": {
+    "links": [
+      {
+        "text": "Terms of Use",
+        "url": "/terms-of-use"
+      },
+      {
+        "text": "Privacy Policy",
+        "url": "/privacy-policy"
+      }
+    ]
+  }
+}

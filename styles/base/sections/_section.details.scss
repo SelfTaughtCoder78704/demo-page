@@ -1,0 +1,12 @@
+.detail {
+  @extend %cardable;
+  @include element-spacing;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.cards .detail-title {
+  flex: 2;
+}

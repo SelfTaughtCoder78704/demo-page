@@ -1,0 +1,29 @@
+// Grayscale
+$black: #000 !default;
+$gray-dark: #333 !default;
+$gray-medium: #bbb !default;
+$gray-light: #e3e3e3 !default;
+$light: #f9f9f9 !default;
+$white: #fff !default;
+
+// Brand
+$primary: #0074d9 !default;
+$secondary: #39cccc !default;
+$tertiary: #ffdc00 !default;
+$error: #ff4136 !default;
+
+$grayscale: (
+  black: $black,
+  gray-dark: $gray-dark,
+  gray-medium: $gray-medium,
+  gray-light: $gray-light,
+  light: $light,
+  white: $white,
+) !default;
+
+$brandscale: (
+  primary: $primary,
+  secondary: $secondary,
+  tertiary: $tertiary,
+  error: $error,
+) !default;

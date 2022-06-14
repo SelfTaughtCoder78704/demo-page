@@ -1,0 +1,54 @@
+@mixin fs-12 {
+  font-size: 0.75rem;
+  line-height: 1.33;
+}
+
+@mixin fs-14 {
+  font-size: 0.875rem;
+  line-height: 1.43;
+}
+
+@mixin fs-16 {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@mixin fs-18 {
+  font-size: 1.125rem;
+  line-height: 1.56;
+}
+
+@mixin fs-20 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+@mixin fs-24 {
+  font-size: 1.5rem;
+  line-height: 1.33;
+}
+
+@mixin fs-30 {
+  font-size: 1.875rem;
+  line-height: 1.27;
+}
+
+@mixin fs-32 {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+@mixin fs-40 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+@mixin fs-48 {
+  font-size: 3rem;
+  line-height: 1.33;
+}
+
+@mixin fs-64 {
+  font-size: 4rem;
+  line-height: 1.25;
+}

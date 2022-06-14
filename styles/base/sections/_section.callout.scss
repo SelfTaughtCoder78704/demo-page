@@ -1,0 +1,63 @@
+.callout-content {
+  @include block-spacing;
+}
+
+.callout-hero {
+  padding: 0;
+
+  .container {
+    padding: 0;
+    max-width: none;
+  }
+
+  .callout-content {
+    margin-top: 0;
+    padding: s(5) s(2);
+  }
+
+  .media-block {
+    img,
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  h2 {
+    font-size: s(5);
+  }
+
+  @include breakpoint(md) {
+    min-height: 50vh;
+    h2 {
+      font-size: s(6);
+    }
+
+    .container {
+      min-height: inherit;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .media-block,
+    .callout-content {
+      flex: 1;
+      flex-basis: 50%;
+    }
+
+    .callout-content {
+      padding: s(5);
+      order: -1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      text-align: left;
+    }
+
+    .cta-block {
+      margin-left: 0;
+    }
+  }
+}

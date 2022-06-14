@@ -1,0 +1,10 @@
+import { {{ pascalCase name }} } from '@components/{{ componentType }}{{ pascalCase name }}'
+
+export default {
+  title: 'Components/{{ titleCase componentType }}{{ pascalCase name }}',
+  component: {{ pascalCase name }},
+}
+
+const Template = (args) => <{{ pascalCase name }} {...args} />
+
+export const Base = Template.bind({})

@@ -1,0 +1,9 @@
+.cards {
+  %cardable {
+    padding: s(4) s(2.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid $gray-light;
+  }
+}

@@ -1,0 +1,37 @@
+// Note that you must @import "slick/slick"; after base for carousel support.
+.is-carousel-on-mobile {
+  & > *,
+  .slick-slide {
+    outline: 0;
+  }
+
+  // This class gets removed above $screen-sm-min (768px).
+  &.slick-slider {
+    display: block;
+    max-width: unset;
+    margin-right: calc((100vw - 100%) / 2 * -1);
+    margin-left: calc((100vw - 100%) / 2 * -1);
+
+    .slick-track {
+      display: flex;
+    }
+
+    .slick-slide {
+      height: unset;
+      margin-right: s(2.5);
+      margin-left: s(2.5);
+    }
+
+    .slick-list,
+    .slick-dots {
+      width: 100%;
+      max-width: 100%;
+
+      button,
+      button:before {
+        outline: 0;
+        border: none;
+      }
+    }
+  }
+}

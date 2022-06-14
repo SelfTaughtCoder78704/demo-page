@@ -1,0 +1,19 @@
+// Set base font size to serve as basis for rem units.
+html {
+  font-size: 16px;
+}
+
+// SPACING FUNCTION:
+// Wherever possible, use this function for spacing.
+
+@function s($x) {
+  @if is-int($x) or (abs($x) <3 and is-int($x * 2)) {
+    @return $x * 0.5rem;
+  }
+  @error "s(#{$x}) is not compatible with the thesis design scale.";
+}
+
+// Check if $x is an integer.
+@function is-int($x) {
+  @return $x == round($x);
+}
